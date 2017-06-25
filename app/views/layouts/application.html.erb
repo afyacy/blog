@@ -11,17 +11,19 @@
 </head>
 <body>
 
-<div class="tryout">
+
 	<header id="main_navigation" class="clearfix">
 	<%= link_to 'Kwabena Antwi', root_path, class: "name" %>
-		<nav>
-		<%= link_to 'Articles', posts_path %>
-		<a href="#">Projects</a>
-		<a href="contact.html">Contact</a>
+		<nav navbar navbar-default navbar-static-top">
+			<div class="container">
+				<%= link_to 'Articles', posts_path %>
+				<a href="#">Projects</a>
+				<a href="contact.html">Contact</a>
+			</div>
 		</nav>
 		
 	</header>
-</div>
+
 	
 
 <%= yield %>

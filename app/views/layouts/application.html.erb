@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Kwabena Antwi</title>
-	<link rel="stylesheet" type="text/css" href="scss/application.css">
+	<title>Obed Armah</title>
+	<link rel="icon" type="image/gif" href="ii.gif" />
+
+	
 	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
@@ -13,7 +15,7 @@
 
 
 	<header id="main_navigation" class="clearfix">
-	<%= link_to 'Kwabena Antwi', root_path, class: "name" %>
+	<%= link_to 'Obed Armah', root_path, class: "name" %>
 		<nav navbar navbar-default navbar-static-top">
 			<div class="container">
 				<%= link_to 'Articles', posts_path %>
@@ -28,15 +30,21 @@
 		
 	</header>
 
-<% if notice %>
+	<% if notice %>
 	<p class="notice"><%= notice %></p>
 <% elsif alert %>
 	<p class="alert"><%= alert %></p>	
 <% end %>
-<%= yield %>
+
+<div class="contentt">
+	<%= yield %>
+</div>
+
+
+
 
 	<footer id="main_footer">
-	<p class="copyright"> &copy; Kwabena Antwi</p>
+	<p class="copyright"> &copy; Obed Armah</p>
 		<nav>
 			<a href="http://twitter.com/antwikwabena98" target="_blank"><i class="fa fa-twitter"></i></a>
 			<a href="http://twitter.com/antwikwabena98"  target="_blank"><i class="fa fa-facebook"></i></a>

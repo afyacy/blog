@@ -1,6 +1,8 @@
-//@import 'bootstrap';
 @import 'normalize';
-
+/* .wrapper, main_navigation
+<div class="contentt">
+</div>
+*/
 $dark: #424652;
 $white: #FFFFFF;
 $light: #9a9da4;
@@ -17,6 +19,8 @@ body{
 
 .wrapper{
 	width: 90%;
+	position: relative;
+    top: 120px;
 	margin: 0 auto;
 }
 
@@ -27,7 +31,7 @@ body{
 }
 
 .wrapper_padding{
-	padding: 4rem 0;
+	padding: 4rem 0 15rem;
 }
 
 .clearfix:before,
@@ -38,16 +42,6 @@ body{
 
 .clearfix:after{
 	 clear: both;
-}
-
-.hidden{
-	display: none;
-}
-
-.notice, .alert{
-	text-align: center;
-	padding: 1em 0;
-	border-bottom: 1px solid #E9E9E9;
 }
 
 h1, h2, h3, h4, h5, h6, p, ul, li{
@@ -96,10 +90,17 @@ hr{
 	 margin: 2rem 0;
  }
 
+.contentt{
+	background-color: #F9F9F9;
+}
 
 #main_navigation{
 	padding: 2.3em 5%;
-	border-bottom: 1px solid $border;
+	background-color: $white;
+	border-bottom: 5px solid $highlight;
+	width: 100%;
+    position: fixed;
+    top: 0px;
 	.name{
 	font-weight: 700;
 	font-size: .8em;
@@ -123,17 +124,7 @@ hr{
 		
 	}
 } 
-/*
-.tryout{
-	position: fixed;
-	top: 0px;
-	bottom: 606px;
-	right: 0px;
-	left: 0px;
-	display: block;
-	z-index: 999;
-}
-*/
+
 #page_title{
 	text-align: center;
 	border-bottom: 1px solid $border;
@@ -144,6 +135,7 @@ hr{
 }
 
 #main_footer{
+    //background-color: #5B7F95;
 	padding: 2.5em 5%;
 	border-top: 1px solid $border; 
 	.copyright{
